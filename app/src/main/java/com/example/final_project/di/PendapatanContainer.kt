@@ -14,7 +14,7 @@ interface PendapatanContainer {
 
 class PendContainer : PendapatanContainer {
 
-    private val baseUrl = "http://10.0.2.2:3000/api/mahasiswa/" //localhost diganti ip kalo run di hp
+    private val baseUrl = "http://10.0.2.2:3000/api/pendapatan/" //localhost diganti ip kalo run di hp
 
     private val json = Json { ignoreUnknownKeys = true }
 

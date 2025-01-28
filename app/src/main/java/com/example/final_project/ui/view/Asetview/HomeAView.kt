@@ -47,7 +47,7 @@ import com.example.final_project.ui.viewmodel.Asetviewmodel.HomeUiState
 import com.example.final_project.ui.viewmodel.PenyediaViewModel
 
 object DestinasiHomeA : DestinasiNavigasi {
-    override val route = "home"
+    override val route = "homeAset"
     override val titleRes = "Home Aset"
 }
 

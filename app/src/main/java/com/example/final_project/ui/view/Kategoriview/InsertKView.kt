@@ -29,7 +29,7 @@
     import kotlinx.coroutines.launch
 
     object DestinasiEntryK: DestinasiNavigasi {
-        override val route = "item_entry"
+        override val route = "insertKategori"
         override val titleRes = "Insert Kategori"
     }
 

@@ -14,7 +14,7 @@ interface PengeluaranContainer {
 
 class PengContainer : PengeluaranContainer {
 
-    private val baseUrl = "http://10.0.2.2:3000/api/mahasiswa/"
+    private val baseUrl = "http://10.0.2.2:3000/api/pengeluaran/"
 
     private val json = Json { ignoreUnknownKeys = true }
 

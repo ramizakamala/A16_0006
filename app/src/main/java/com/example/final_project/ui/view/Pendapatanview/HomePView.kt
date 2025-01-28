@@ -47,7 +47,7 @@ import com.example.final_project.ui.viewmodel.Pendapatanviewmodel.HomeUiState
 import com.example.final_project.ui.viewmodel.PenyediaViewModel
 
 object DestinasiHomeP : DestinasiNavigasi {
-    override val route = "home"
+    override val route = "homePendapatan"
     override val titleRes = "Home Pendapatan"
 }
 

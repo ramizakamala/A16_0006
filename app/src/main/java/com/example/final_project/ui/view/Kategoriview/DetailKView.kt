@@ -46,7 +46,7 @@ import com.example.final_project.ui.viewmodel.Kategoriviewmodel.DetailUiState
 import com.example.final_project.ui.viewmodel.PenyediaViewModel
 
 object DestinasiDetailK: DestinasiNavigasi {
-    override val route = "detail"
+    override val route = "detailKategori"
     override val titleRes = "Detail Kategori"
     const val idkategori = "idkategori"
     val routeWithArgs = "$route/{$idkategori}"

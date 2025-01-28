@@ -31,7 +31,7 @@ import com.example.final_project.ui.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
 object DestinasiUpdateN: DestinasiNavigasi {
-    override val route = "update"
+    override val route = "updatePengeluaran"
     override val titleRes = "Update Pengeluaran"
     const val idpengeluaran = "idpengeluaran"
     val routeWithArgs = "$route/{$idpengeluaran}"

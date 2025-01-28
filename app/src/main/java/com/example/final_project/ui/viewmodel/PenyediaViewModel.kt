@@ -9,8 +9,10 @@ import com.example.final_project.ui.viewmodel.Asetviewmodel.DetailAviewModel
 import com.example.final_project.ui.viewmodel.Asetviewmodel.HomeAViewModel
 import com.example.final_project.ui.viewmodel.Asetviewmodel.InsertAViewModel
 import com.example.final_project.ui.viewmodel.Asetviewmodel.UpdateAViewModel
+import com.example.final_project.ui.viewmodel.Kategoriviewmodel.DetailKViewModel
 import com.example.final_project.ui.viewmodel.Kategoriviewmodel.HomeKViewModel
 import com.example.final_project.ui.viewmodel.Kategoriviewmodel.InsertKViewModel
+import com.example.final_project.ui.viewmodel.Kategoriviewmodel.UpdateKViewModel
 import com.example.final_project.ui.viewmodel.Pendapatanviewmodel.DetailPViewModel
 import com.example.final_project.ui.viewmodel.Pendapatanviewmodel.HomePViewModel
 import com.example.final_project.ui.viewmodel.Pendapatanviewmodel.InsertPViewModel
@@ -26,27 +28,27 @@ fun CreationExtras.aplikasibank(): bankApplications =
 object PenyediaViewModel{
     val Factory = viewModelFactory {
         // pendapatan
-        initializer { HomePViewModel(bankApplications().containerP.pendapatanRepository) }
-        initializer { InsertPViewModel(bankApplications().containerP.pendapatanRepository) }
-        initializer { UpdatePViewModel(bankApplications().containerP.pendapatanRepository) }
-        initializer { DetailPViewModel(bankApplications().containerP.pendapatanRepository) }
+        initializer { HomePViewModel(aplikasibank().containerP.pendapatanRepository) }
+        initializer { InsertPViewModel(aplikasibank().containerP.pendapatanRepository) }
+        initializer { UpdatePViewModel(aplikasibank().containerP.pendapatanRepository) }
+        initializer { DetailPViewModel(aplikasibank().containerP.pendapatanRepository) }
 
         // pengeluaran
-        initializer { HomeViewModel(bankApplications().containerN.pengeluaranRepository) }
-        initializer { InsertViewModel(bankApplications().containerN.pengeluaranRepository) }
-        initializer { UpdateViewModel(bankApplications().containerN.pengeluaranRepository) }
-        initializer { DetailViewModel(bankApplications().containerN.pengeluaranRepository) }
+        initializer { HomeViewModel(aplikasibank().containerN.pengeluaranRepository) }
+        initializer { InsertViewModel(aplikasibank().containerN.pengeluaranRepository) }
+        initializer { UpdateViewModel(aplikasibank().containerN.pengeluaranRepository) }
+        initializer { DetailViewModel(aplikasibank().containerN.pengeluaranRepository) }
 
         // aset
-        initializer { HomeAViewModel(bankApplications().containerA.asetRepository) }
-        initializer { InsertAViewModel(bankApplications().containerA.asetRepository) }
-        initializer { UpdateAViewModel(bankApplications().containerA.asetRepository) }
-        initializer { DetailAviewModel(bankApplications().containerA.asetRepository) }
+        initializer { HomeAViewModel(aplikasibank().containerA.asetRepository) }
+        initializer { InsertAViewModel(aplikasibank().containerA.asetRepository) }
+        initializer { UpdateAViewModel(aplikasibank().containerA.asetRepository) }
+        initializer { DetailAviewModel(aplikasibank().containerA.asetRepository) }
 
         // kategori
-        initializer { HomeKViewModel(bankApplications().containerK.kategoriRepository) }
-        initializer { InsertKViewModel(bankApplications().containerK.kategoriRepository) }
-        initializer { UpdateAViewModel(bankApplications().containerA.asetRepository) }
-        initializer { DetailAviewModel(bankApplications().containerA.asetRepository) }
+        initializer { HomeKViewModel(aplikasibank().containerK.kategoriRepository) }
+        initializer { InsertKViewModel(aplikasibank().containerK.kategoriRepository) }
+        initializer { UpdateKViewModel(aplikasibank().containerK.kategoriRepository) }
+        initializer { DetailKViewModel(aplikasibank().containerK.kategoriRepository) }
     }
 }

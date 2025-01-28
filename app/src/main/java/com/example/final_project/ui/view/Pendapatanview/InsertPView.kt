@@ -29,7 +29,7 @@ import com.example.final_project.ui.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.launch
 
 object DestinasiEntryP: DestinasiNavigasi {
-    override val route = "item_entry"
+    override val route = "insertPendapatan"
     override val titleRes = "Insert Pendapatan"
 }
 

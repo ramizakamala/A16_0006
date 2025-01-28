@@ -47,7 +47,7 @@ import com.example.final_project.ui.viewmodel.PenyediaViewModel
 
 
 object DestinasiDetailN: DestinasiNavigasi {
-    override val route = "detail"
+    override val route = "detailPengeluaran"
     override val titleRes = "Detail Pengeluaran"
     const val idpengeluaran = "idpengeluaran"
     val routeWithArgs = "$route/{$idpengeluaran}"
